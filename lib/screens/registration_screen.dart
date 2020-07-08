@@ -47,13 +47,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             SizedBox(
               height: 24.0,
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: 16.0),
-              child: Material(
-                color: Colors.blueAccent,
-                borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                elevation: 5.0,
-                child: RoundedButton(
+            RoundedButton(
                   title: 'Register',
                   color: Colors.white,
                   onPressed: () {
@@ -61,7 +55,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   },
                 ),
               ),
-            ),
           ],
         ),
       ),
