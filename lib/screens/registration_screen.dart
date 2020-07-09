@@ -48,13 +48,12 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               height: 24.0,
             ),
             RoundedButton(
-                  title: 'Register',
-                  color: Colors.white,
-                  onPressed: () {
-                    Navigator.pushNamed(context, RegistrationScreen.id);
-                  },
-                ),
-              ),
+              title: 'Register',
+              color: Colors.white,
+              onPressed: () {
+                Navigator.pushNamed(context, RegistrationScreen.id);
+              },
+            ),
           ],
         ),
       ),
