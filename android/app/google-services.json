@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "988770500986",
+    "firebase_url": "https://flash-chat-a43f7.firebaseio.com",
+    "project_id": "flash-chat-a43f7",
+    "storage_bucket": "flash-chat-a43f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988770500986:android:40283e50058014d96f96c3",
+        "android_client_info": {
+          "package_name": "com.avishalom.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988770500986-5cmernid634v8jgpfrpgpahhtg67rg6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLorZxBy-6wOPFWnGacr0DAP8wNa1YIvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988770500986-5cmernid634v8jgpfrpgpahhtg67rg6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
