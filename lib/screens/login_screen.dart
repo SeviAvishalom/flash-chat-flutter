@@ -12,6 +12,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  final passwordTextController = TextEditingController();
   final _auth = FirebaseAuth.instance;
   bool showSpinner = false;
   String email;
@@ -52,6 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 8.0,
               ),
               TextField(
+                  controller: passwordTextController,
                   obscureText: true,
                   textAlign: TextAlign.center,
                   onChanged: (value) {
@@ -69,6 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   color: Colors.lightBlueAccent,
                   onPressed: () async {
                     setState(() {
+                      passwordTextController.clear();
                       showSpinner = true;
                     });
                     try {

@@ -12,6 +12,7 @@ class RegistrationScreen extends StatefulWidget {
 }
 
 class _RegistrationScreenState extends State<RegistrationScreen> {
+  final passwordTextController = TextEditingController();
   final _auth = FirebaseAuth.instance;
   bool showSpinner = false;
   String email;
@@ -53,6 +54,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 height: 8.0,
               ),
               TextField(
+                  controller: passwordTextController,
                   obscureText: true,
                   textAlign: TextAlign.center,
                   onChanged: (value) {
@@ -68,6 +70,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 color: Colors.blueAccent,
                 onPressed: () async {
                   setState(() {
+                    passwordTextController.clear();
                     showSpinner = true;
                   });
                   try {
